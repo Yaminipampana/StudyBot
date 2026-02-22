@@ -27,17 +27,10 @@ The chatbot stores user conversations in MongoDB using user_id. When a new query
 
 POST /chat
 
-Example Request:
-{
-"user_id": "student1",
-"query": "What is AI?"
-}
+- Example Request:{"user_id": "student1","query": "What is AI?"}
 
 
-Example Response:
-{
-"response": "Artificial Intelligence is..."
-}
+- Example Response: {"response": "Artificial Intelligence is..."}
 
 
 ## Deployment Link
