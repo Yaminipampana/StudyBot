@@ -8,7 +8,7 @@ from datetime import datetime
 
 load_dotenv()
 
-app = FastAPI()
+app = FastAPI(title="StudyBot")
 
 # Load keys
 groq_key = os.getenv("GROQ_API_KEY")
@@ -62,4 +62,5 @@ def chat(req: ChatRequest):
         return {"response": bot_reply}
 
     except Exception as e:
+
         return {"error": str(e)}
